@@ -1,0 +1,222 @@
+# XAU Trading Bot - .gitignore
+# Security-first configuration for public GitHub release
+
+# =============================================================================
+# CRITICAL - LOG FILES (Contains MT5 account numbers and trading data)
+# =============================================================================
+*.log
+logs/
+*.log.*
+
+# =============================================================================
+# SENSITIVE DATA - Market Data & Trading History
+# =============================================================================
+# Large CSV files with historical data (124 MB - can regenerate from MT5)
+*.csv
+XAUUSD_data_*.csv
+
+# Output files (may contain code dumps or sensitive data)
+output.txt
+*.output
+
+# =============================================================================
+# CREDENTIALS & CONFIGURATION
+# =============================================================================
+# Environment variables (for future use if CONFIG moves to .env)
+.env
+.env.local
+.env.*.local
+*.env
+
+# MT5 terminal configuration (if accidentally copied)
+mt5.ini
+terminal.ini
+
+# Backup files that might contain sensitive data
+*.bak
+*.backup
+*.old
+
+# =============================================================================
+# PYTHON ARTIFACTS
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =============================================================================
+# VIRTUAL ENVIRONMENTS
+# =============================================================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Conda environments
+conda/
+.conda/
+
+# =============================================================================
+# IDE & EDITOR FILES
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Spyder
+.spyderproject
+.spyproject
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# =============================================================================
+# MODEL FILES (OPTIONAL - Consider using Git LFS for these)
+# =============================================================================
+# Uncomment if you want to exclude trained models (can retrain)
+# Large Keras models (4.7 MB - 7.5 MB each)
+# *.keras
+# *.h5
+
+# Scikit-learn pickled models (1.3 MB)
+# *.pkl
+# *.pickle
+# *.joblib
+
+# Scalers and preprocessors
+# *_scaler.pkl
+# *_scalers.pkl
+
+# NOTE: If keeping models in repo, consider using Git LFS:
+# git lfs track "*.keras"
+# git lfs track "*.pkl"
+
+# =============================================================================
+# TEMPORARY FILES
+# =============================================================================
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# =============================================================================
+# DOCUMENTATION BUILD FILES
+# =============================================================================
+docs/_build/
+docs/.doctrees/
+site/
+
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# =============================================================================
+# DATABASE FILES (if you add SQLite or other DBs)
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# SECURITY AUDIT (Generated file - can keep or remove)
+# =============================================================================
+# Uncomment to exclude the security audit report
+# SECURITY_AUDIT_REPORT.md
+
+# =============================================================================
+# CUSTOM EXCLUSIONS
+# =============================================================================
+# Add project-specific exclusions below
+
+# Claude Code local settings (keep or exclude based on preference)
+# .claude/settings.local.json
