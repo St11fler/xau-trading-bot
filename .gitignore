@@ -211,7 +211,7 @@ docs/_templates/
 # SECURITY AUDIT (Generated file - can keep or remove)
 # =============================================================================
 # Uncomment to exclude the security audit report
-# SECURITY_AUDIT_REPORT.md
+SECURITY_AUDIT_REPORT.md
 
 # =============================================================================
 # CUSTOM EXCLUSIONS
@@ -219,4 +219,4 @@ docs/_templates/
 # Add project-specific exclusions below
 
 # Claude Code local settings (keep or exclude based on preference)
-# .claude/settings.local.json
+.claude/settings.local.json
