@@ -143,7 +143,7 @@ AI-powered automated trading system for Gold (XAU/USD) forex trading using machi
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/xaubot.git
+git clone https://github.com/st11fler/xaubot.git
 cd xaubot
 ```
 
